@@ -1,6 +1,8 @@
-# Modernizr::Rails
+# Modernizr for rails asset pipeline
 
-TODO: Write a gem description
+[Modernizr](https://github.com/Modernizr/Modernizr) is a JavaScript library allowing you to use CSS3 & HTML5 while maintaining control over unsupported browsers.
+
+The `modernizr-rails` gem integrates the `Modernizr` with the Rails asset pipeline.
 
 ## Installation
 
@@ -18,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add to your `app/assets/stylesheets/application.js`
+
+    //= require modernizr
 
 ## Contributing
 
@@ -27,3 +31,21 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Gem maintainance
+
+Maintain `modernizr-rails` gem with `Rake` commands.
+
+Update origin modernizr source files.
+
+    rake update-modernizr
+
+Publish gem.
+
+    rake release
+
+## License
+
+Modernizr is dual-licensed under the [BSD and MIT licenses](http://www.modernizr.com/license/).
+
+Other parts of gem use MIT license.

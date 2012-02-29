@@ -1,5 +1,6 @@
 module Modernizr
   module Rails
-    VERSION = "0.0.1"
+    VERSION = '2.5.3'
+    MODERNIZR_VERSION = '2.5.3'
   end
 end
