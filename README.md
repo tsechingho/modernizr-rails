@@ -2,13 +2,13 @@
 
 [Modernizr](https://github.com/Modernizr/Modernizr) is a JavaScript library allowing you to use CSS3 & HTML5 while maintaining control over unsupported browsers.
 
-The `modernizr-rails` gem integrates the `Modernizr` with the Rails asset pipeline.
+The `modernizr_rails` gem integrates the `Modernizr` with the Rails asset pipeline.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'modernizr-rails'
+    gem 'modernizr_rails', :require => 'modernizr-rails'
 
 And then execute:
 
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install modernizr-rails
+    $ gem install modernizr_rails
 
 ## Usage
 
@@ -34,7 +34,7 @@ Add to your `app/assets/stylesheets/application.js`
 
 ## Gem maintainance
 
-Maintain `modernizr-rails` gem with `Rake` commands.
+Maintain `modernizr_rails` gem with `Rake` commands.
 
 Update origin modernizr source files.
 
