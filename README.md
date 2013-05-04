@@ -8,7 +8,7 @@ The `modernizr_rails` gem integrates the `Modernizr` with the Rails asset pipeli
 
 Add this line to your application's Gemfile:
 
-    gem 'modernizr_rails', :require => 'modernizr-rails'
+    gem 'modernizr_rails'
 
 And then execute:
 
