@@ -6,12 +6,12 @@ class SourceFile < Thor
   desc 'fetch source files', 'fetch source files from GitHub'
   def fetch
     self.destination_root = 'vendor/assets'
-    remote = 'https://raw.github.com/Modernizr/Modernizr'
-    get "#{remote}/master/modernizr.js", 'javascripts/modernizr.js'
+    remote = 'http://modernizr.com/downloads/'
+    get "#{remote}/modernizr-latest.js", 'javascripts/modernizr.js'
     inside destination_root do
       version = File.read('javascripts/modernizr.js').match(/version\s=\s'([\d|\.]+)'/)[1]
-      gsub_file '../../lib/modernizr-rails/version.rb', /VERSION\s=\s'(\d|\.)+'$/ do |match|
-        %Q{VERSION = '#{version}'}
+      gsub_file '../../lib/modernizr-rails/version.rb', /MODERNIZR_VERSION\s=\s'(\d|\.)+'$/ do |match|
+        %Q{MODERNIZR_VERSION = '#{version}'}
       end
     end
   end
