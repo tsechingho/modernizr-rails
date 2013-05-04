@@ -54,6 +54,6 @@ Publish gem.
 
 ## License
 
-Modernizr is dual-licensed under the [BSD and MIT licenses](http://www.modernizr.com/license/).
+Modernizr is available under the [MIT licenses](http://www.modernizr.com/license/).
 
 Other parts of gem use MIT license.
