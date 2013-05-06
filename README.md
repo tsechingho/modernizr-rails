@@ -24,11 +24,7 @@ Add this line to your `app/assets/stylesheets/application.js` to compile as a pa
 
     //= require modernizr
 
-Or add this line to your `config/environments/production.rb` to compile as a standalone javascript file
-
-    config.assets.precompile += %w( modernizr.js )
-
-And include it in your layout like `app/views/layouts/application.html.erb`
+Or use the precompiled standalone javascript file by include it in your layout, like `app/views/layouts/application.html.erb`
 
     <%= javascript_include_tag 'modernizr' %>
 
