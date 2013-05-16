@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Add this line to your `app/assets/stylesheets/application.js` to compile as a part of application.js
+Add this line to your `app/assets/javascripts/application.js` to compile as a part of application.js
 
     //= require modernizr
 
