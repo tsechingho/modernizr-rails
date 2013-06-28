@@ -39,6 +39,12 @@ If you already know which feature you need to test and don't want to load all th
 
 This will also load the `Modernizr.load` conditional script loader.
 
+If you need standalone `modernizr.js` file, you should add it to precompile list in `config/application.rb`
+
+    config.assets.precompile += %W(
+      modernizr.js
+    )
+
 ## Contributing
 
 1. Fork it
