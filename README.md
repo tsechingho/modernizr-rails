@@ -20,13 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
-Add this line to your `app/assets/javascripts/application.js` to compile as a part of application.js
+There is two ways to use this gem. If you don't know which feature you'll need to test, add this line to your `app/assets/javascripts/application.js` to compile as a part of application.js
 
+    // Load all Modernizr javascripts
     //= require modernizr
 
 Or use the precompiled standalone javascript file by include it in your layout, like `app/views/layouts/application.html.erb`
 
     <%= javascript_include_tag 'modernizr' %>
+
+This will load all test scripts, including the `Modernizr.load` conditional script loader, based on [yepnope.js](https://github.com/SlexAxton/yepnope.js).
+
+If you already know which feature you need to test and don't want to load all these javascript files, you can load individual Modernizr javascript :
+
+	//= require modernizr-canvas
+	//= require modernizr-fontface
+	//= require modernizrtextshadow
+
+This will also load the `Modernizr.load` conditional script loader.
 
 ## Contributing
 
@@ -35,18 +46,6 @@ Or use the precompiled standalone javascript file by include it in your layout, 
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-
-## Gem maintainance
-
-Maintain `modernizr_rails` gem with `Rake` commands.
-
-Update origin modernizr source files.
-
-    rake update-modernizr
-
-Publish gem.
-
-    rake release
 
 ## License
 
