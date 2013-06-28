@@ -29,9 +29,9 @@ class SourceFile < Thor
               file.write(lines[lineno+index])
               index += 1
             end
-          file.write(lines[lineno+index])
+            file.write(lines[lineno+index])
           end
-        index = 0
+          index = 0
         end
       end
     end

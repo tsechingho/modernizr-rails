@@ -33,9 +33,9 @@ This will load all test scripts, including the `Modernizr.load` conditional scri
 
 If you already know which feature you need to test and don't want to load all these javascript files, you can load individual Modernizr javascript :
 
-	//= require modernizr-canvas
-	//= require modernizr-fontface
-	//= require modernizrtextshadow
+    //= require modernizr-canvas
+    //= require modernizr-fontface
+    //= require modernizrtextshadow
 
 This will also load the `Modernizr.load` conditional script loader.
 
